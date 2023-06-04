@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHOOL LEAVE MANAGEMENT SYSTEM</title>
+</head>
+
+<body>
+    
+    <script src="https://kit.fontawesome.com/8fb5308430.js" crossorigin="anonymous"></script>
+    <div class="wrapper">
+     <nav id="sidebar">
+        <div class="sidebar-header">
+            <h2>SVP HIGH SCHOOL</h2>
+        </div>
+         
+    <ul class="list-unstyled components">
+        <center><i class="fa-solid fa-user fa-beat fa-2xl"></i></center>
+        <p id="username">HELLO, HIMANSHU</p>
+            <li>
+                <a href="#SubHome" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>Admin</a>
+                <ul class="collapse list-unstyled" id="SubHome">
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>                     
+                      
+                    <li>
+                        <a href="admission.html">Manage Admission</a>
+                    </li>
+                
+                     <li>
+                        <a href="calendar.html">Calendar</a>
+                    </li>            					
+               </ul> 
+            </li> 
+
+            <li>
+                <a href="SubTeachers" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa-sharp fa-solid fa-person-chalkboard"></i>Teachers</a>
+                <ul class="collapse list-unstyled" id="SubTeachers">
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="teacherleave.html">Apply for Leave</a>
+                </li>
+                <li>
+                    <a href="teacherattendance.html">Attendance</a>
+                </li>
+                <li>
+                    <a href="teacherrecord.html">Teacher leave record</a>
+                </li>                                                                                                                 
+                </ul> 
+                  
+            <li>
+                <a href="#SubStudents" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fa-solid fa-school"></i>Students</a>
+                    <ul class="collapse list-unstyled" id="SubStudents">
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="studentleave.html">Apply for Leave</a>
+                    </li>
+                    <li>
+                        <a href="attendance.html">Attendance</a>
+                    </li>
+                    <li>
+                        <a href="studentrecord.html">Student leave record</a>
+                    </li>                                          
+                </ul> 
+           </li>
+           <li>
+                <a href="#SubEducation" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa-solid fa-graduation-cap"></i>Education</a>
+                <ul class="collapse list-unstyled" id="SubEducation">
+                    <li>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Class details</a>
+                    </li>                                                            
+                    <li>
+                        <a href="#">Syllabus</a>
+                    </li>                                                                                 
+                </ul> 
+           </li>
+           <li>
+            <a href="#SubExam" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fa fa-check" aria-hidden="true"></i>Examinations</a>
+            <ul class="collapse list-unstyled" id="SubExam">
+                   <li>
+                       <a href="dashboard.html">Dashboard</a>
+                </li>                    
+                   <li>
+                       <a href="result.html">Results</a>
+                   </li>
+                </ul> 
+           </li>
+           <li>
+                <a href="#SubNotices" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                <i class="fa fa-sticky-note-o" aria-hidden="true"></i>Notice</a>
+                <ul class="collapse list-unstyled" id="#SubNotices">
+                <li>
+                    <a href="studentnotice.html">Important notice for Student</a>
+                </li>
+                <li>
+                    <a href="teachernotice.html">Important notice for Teacher</a>
+                </li>                   
+               </ul> 
+           </li>
+        
+        
+        <li>
+            <a href="#SubSettings" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
+            <ul class="collapse list-unstyled" id="SubSettings">                    
+                <li>
+                    <a href="delete.html">Delete Account</a>
+                </li>
+                <li>
+                    <a href="history.html">History</a>
+                </li>                 
+            </ul> 
+        </li>
+
+        <li>
+            <a href="#SubAbout" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-info-circle" aria-hidden="true"></i>About</a>
+            <ul class="collapse list-unstyled" id="#SubAbout">
+                <li>
+                    <a href="about.html">About us</a>
+                </li>
+                <li>
+                    <a href="version.html">Version</a>
+                </li>                
+            </ul> 
+        </li>
+       </ul>
+       
+       <ul class="list-unstyled CTAs">
+        <li> <a href="download.html" class="download">Download Attendance</a></li>
+        <li><a href="about.html" class="article">Logout</a></li>
+       </ul>
+        
+       
+   </nav>
+   
+       
+<!--toggle button-->
+<div class="content">   			
+    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+    <i class="fa-solid fa-bars fa"></i>
+ </button>           
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script>
+ $(document).ready(function(){
+     $('#sidebarCollapse').on('click',function(){
+         $('#sidebar').toggleClass('active');
+     });
+ }); 
+
+</script>
+
+</body>
+</html>

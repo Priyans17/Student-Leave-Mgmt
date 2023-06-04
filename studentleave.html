@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="studentleave.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="studentleave.js" defer></script>
+    <title>Student Leave Application</title>
+</head>
+<body>
+	<form>
+		<h2>LEAVE APPLICATION</h2>
+		<div class="large-group">
+			<div class="small-group">
+				<label for="firstname">First Name - </label>
+				<input id="firstname" type="text" name="firstname" required/>
+			</div>
+			
+			<div class="small-group">
+				<label for="lastname">Last Name - </label>
+				<input for="lastname" type="text" name="lastname" required/>
+			</div>
+      
+      <div class="small-group">
+				<label for="standard">Standard - </label>
+        <select required> 
+          <option value="" disabled selected>Select Standard - </option>
+		  <option value="1">FOURTH</option>
+		  <option value="2">FIFTH</option>
+		  <option value="3">SIXTH</option>
+		  <option value="4">SEVENTH</option>
+		  <option value="5">EIGHT</option>
+		  <option value="6">NINETH</option>
+		  <option value="7">TENTH</option>
+	    </select> <br>
+	  </div>
+      
+      <div class="small-group">
+				<label for="division">Division - </label>
+		<select required> 
+                    <option value="">Select Division - </option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">D</option>
+                    <option value="5">E</option>
+                    <option value="6">F</option>
+                    </select> <br>
+			</div>
+      
+			<div class="small-group">
+				<label for="email">Email Address - </label>
+				<input id="email" type="email" name="email" required/>
+			</div>
+      
+      <div class="small-group">
+				<label for="adress">Address - </label>
+				<input id="address" type="text" name="address" required/>
+			</div>
+			
+			<div class="small-group">
+				<label for="phonenumber">Phone Number - </label>
+				<input id="phonenumber" type="tel" name="phonenumber" required/>
+			</div>
+			
+      <div class="small-group">
+				<label for="phonenumber">Emergency Phone Number - </label>
+				<input id="phonenumber" type="tel" name="phonenumber" required/>
+			</div>
+      
+      <div class="textarea-div">
+				<label for="others2">Type of Leave - </label>
+        <select required name="others2" onchange='Others2(this.value);'> 
+          <option value="" disabled selected>Select type of leave - </option>
+					<option value="Annual">Annual Leave</option>
+					<option value="Emergency">Emergency Leave</option>
+          <option value="mp">Maternity / Paternity</option>
+					<option value="Other2">Others</option>
+          </select><br>
+		</div>
+	
+      <div class="small-group">
+				<label for="start">Leave Start Date - </label>
+				<input id="start" type="date" name="start" required/>
+			</div>
+      
+      <div class="small-group">
+				<label for="end">Leave End Date - </label>
+				<input id="end" type="date" name="end" required/>
+			</div>
+      
+      <div class="small-group">
+				<label for="from">Departure From - </label>
+				<input id="from" type="date" name="from" required/>
+			</div>
+      
+      <div class="small-group">
+				<label for="to">Arrival On - </label>
+				<input id="to" type="date" name="to" required/>
+			</div>
+      
+			<div class="textarea-div">
+				<label for="reason">Reason for Leave - </label>
+				<textarea id="reason" type="text" name="reason" required></textarea>
+			</div>
+			
+				<input id="submit" class="btn" type="submit" name="submit"/>
+
+		</div>
+	</form>
+</body>

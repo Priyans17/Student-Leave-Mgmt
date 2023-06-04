@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="delete.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="delete.js" defer></script>
+    <title>Delete Account</title>
+</head>
+<main role="main">
+    <button id="invoke" class="warn">Delete account</button>
+  
+    <dialog>
+      <form method="dialog">
+        <i class="cancel fa-solid fa-xmark"></i>
+        <strong>Confirm</strong>
+        <p>Are you sure you want to delete account ?</p>
+        <menu>
+          <small><i class="fa-solid fa-keyboard"></i> Esc</small>
+          <button value="false">Close</button>
+          <button value="true" class="warn">Yes</button>
+        </menu>
+      </form>
+    </dialog>
+  
+    <output aria-live="polite"></output>
+  </main>

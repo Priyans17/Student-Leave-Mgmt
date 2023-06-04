@@ -1,0 +1,123 @@
+body{
+  font-family:'roboto','arial', sans-serif;
+  line-height:normal;
+  margin:40px auto; 
+  max-width:600px;
+}
+a{
+  color:#333;
+  text-decoration:none;
+
+}
+
+ul.style_one{
+  margin:0 0 100px;
+  padding:10;
+  list-style-type:none;
+> li{
+    margin:0 0 2%;
+    padding:0;
+&.highlight{
+      box-shadow:0 0 0 3px darken($basic, 40%) inset;
+    }
+> a{
+      display:block;
+      padding:25px 25px 25px 66px;
+      box-shadow:0 0 5px 0px rgba(0,0,0,0.3);
+      position:relative;
+      transition: all 0.2s ease-in-out;
+      z-index:1;
+      perspective: 700px;
+      transform-origin:center left;
+&:hover{
+        box-shadow:0 0 5px 2px rgba(7, 6, 6, 0.3);
+        z-index:2;
+        span{
+          transform-origin:center left;
+          transform:translateY(-50%) rotateY(60deg);
+        }
+      }
+span{
+        content:'.file';
+        display:block;
+        width:36px;
+        height:50px;
+        background:$basic;
+        box-shadow:0 0 0 1px darken($basic, 20%) inset;
+        overflow:hidden;
+        position:absolute;
+        top:50%;
+        left:15px;
+        transform:translateY(-50%);
+        color:#fff;
+        font-size:12px;
+        text-align:center;
+        line-height:70px;
+        transition: all 0.2s ease-in-out;
+&:before{
+          content:'';
+          display:block;
+          width:12px;
+          height:12px;
+          background:darken($basic , 10%);
+          box-shadow:0 0 0 1px darken($basic, 20%) inset;
+          position: absolute;
+          top:0;
+          right:0;
+        }
+&:after{
+          content:'';
+          display:block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 12px 12px 0;
+          border-color: transparent #fff transparent transparent;
+          position:absolute;
+          top:0;
+          right:0;
+        }
+      }
+i:before{
+        content:'.file';
+        font-style:normal;
+      }
+&[href$=".pdf"] span{
+        background-color:$pdf;
+        box-shadow:0 0 0 1px darken($pdf, 20%) inset;
+&:before{
+        background-color:darken($pdf, 10%);
+          box-shadow:0 0 0 1px darken($pdf, 20%) inset;
+        }
+        i:before{
+          content:'.pdf';
+        }
+      }
+&[href$=".doc"] span{
+        background-color:$doc;
+        box-shadow:0 0 0 1px darken($doc, 20%) inset;
+&:before{
+        background-color:darken($doc, 10%);
+          box-shadow:0 0 0 1px darken($doc, 20%) inset;
+        }
+        i:before{
+          content:'.doc';
+        }
+      }
+
+&[href$=".xls"] span{
+        background-color:$xls;
+        box-shadow:0 0 0 1px darken($xls, 20%) inset;
+        &:before{
+          background-color:darken($xls, 10%);
+          box-shadow:0 0 0 1px darken($xls, 20%) inset;
+        }
+        i:before{
+          content:'.xls';
+        }
+      }
+
+
+    }
+  }
+}
